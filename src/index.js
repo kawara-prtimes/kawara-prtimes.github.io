@@ -590,7 +590,7 @@ class Container extends Component {
   }
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact
             path='/'
